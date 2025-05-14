@@ -17,10 +17,10 @@ function result(sentences) {
     const count = sentence
       .trim()
       .split(/\s+/)
-      .filter((word) => length.word > 0).length;
-  }
-  if (count > mw) {
-    mw = count;
+      .filter((word) => word.length > 0).length;
+    if (count > mw) {
+      mw = count;
+    }
   }
   return mw;
 }
